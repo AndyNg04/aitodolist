@@ -1,0 +1,39 @@
+{
+  "name": "lumilist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "tsx tests/e2e/run-e2e.ts",
+    "db:migrate": "tsx scripts/db-init.ts",
+    "db:seed": "tsx scripts/db-seed.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.1.1",
+    "chrono-node": "^2.6.4",
+    "clsx": "^2.1.0",
+    "luxon": "^3.4.4",
+    "next": "14.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "^2.2.4",
+    "zod": "^3.23.8",
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.3",
+    "tsx": "^4.7.2",
+    "typescript": "5.4.5",
+    "vitest": "^1.5.0",
+    "playwright": "^1.44.0"
+  }
+}
